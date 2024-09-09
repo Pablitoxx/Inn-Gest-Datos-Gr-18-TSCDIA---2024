@@ -1,4 +1,5 @@
 import moduloRecuperacion
+import moduloAritmetica
 usuarios = {}
 # login
 
@@ -135,11 +136,14 @@ while True:
             print("5- Cancelar reserva")
             print("6- Modificar datos Usuario")
             print("7- Eliminar Usuario")
-            print("8- Salir")
+            print("8-Seccion Aritmetica")
+            print("9- Salir")
             print("-" * 40)
             menu_opcion = input("Escribe la opción que desea escoger: ")
             print("-" * 40)
             if menu_opcion == "8":
+               moduloAritmetica.menuAritmetica()
+            if menu_opcion == "9":
                   print("Gracias por utilizar el sistema.\n")
                   print("-" * 40)
                   break  # Salir del menú y del programa
